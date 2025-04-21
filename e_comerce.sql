@@ -80,10 +80,8 @@ CREATE TABLE product_variation (
 CREATE TABLE product_item (
   item_id            INT AUTO_INCREMENT PRIMARY KEY,
   variation_id       INT         NOT NULL,
-  sku                VARCHAR(100) NOT NULL UNIQUE,
   price              DECIMAL(10,2),         -- overrides base_price if set
   stock_quantity     INT        DEFAULT 0,
-  created_at         TIMESTAMP  DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (variation_id)
                      REFERENCES product_variation(variation_id)
 );
