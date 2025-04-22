@@ -163,11 +163,7 @@ INSERT INTO size_option (size_category_id, label) VALUES
 (3, 'M'),
 (4, 'L'),
 (5, 'XL'),
-(6, '6'),
-(7, '7'),
-(8, '8'),
-(9, '9'),
-(10, '10');
+(6, 'XXL');
 
 INSERT INTO product (product_name, brand_id, category_id, base_price, description) VALUES
 ('Air Max Sneakers', 1, 3, 120.00, 'Comfortable and stylish running shoes'),
