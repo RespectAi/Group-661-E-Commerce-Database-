@@ -110,16 +110,17 @@ CREATE TABLE product_attribute (
 
 -- INSERT statements
 INSERT INTO brand (name, logo_url, description) VALUES
-('Nike', 'https://example.com/nike.png', 'Sportswear and footwear'),
-('Apple', 'https://example.com/apple.png', 'Consumer electronics and software'),
-('Adidas', 'https://example.com/adidas.png', 'Athletic apparel and footwear'),
-('Sony', 'https://example.com/sony.png', 'Electronics and entertainment'),
-('Samsung', 'https://example.com/samsung.png', 'Electronics and home appliances'),
-('Dell', 'https://example.com/dell.png', 'Computers and technology'),
-('HP', 'https://example.com/hp.png', 'Personal computing and printing'),
-('Puma', 'https://example.com/puma.png', 'Sport lifestyle products'),
-('Lenovo', 'https://example.com/lenovo.png', 'PCs and smart devices'),
-('LG', 'https://example.com/lg.png', 'Electronics and appliances');
+  ('Nike',    'https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg',    'Sportswear and footwear'),
+  ('Apple',   'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg',  'Consumer electronics and software'),
+  ('Adidas',  'https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg',  'Athletic apparel and footwear'),
+  ('Sony',    'https://upload.wikimedia.org/wikipedia/commons/2/25/Sony_Logo.svg',    'Electronics and entertainment'),
+  ('Samsung', 'https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg', 'Electronics and home appliances'),
+  ('Dell',    'https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg',    'Computers and technology'),
+  ('HP',      'https://upload.wikimedia.org/wikipedia/commons/3/3a/HP_logo_2012.svg','Personal computing and printing'),
+  ('Puma',    'https://upload.wikimedia.org/wikipedia/commons/f/f7/Puma_AG.svg',     'Sport lifestyle products'),
+  ('Lenovo',  'https://upload.wikimedia.org/wikipedia/commons/1/12/Lenovo_logo.svg', 'PCs and smart devices'),
+  ('LG',      'https://upload.wikimedia.org/wikipedia/commons/9/95/LG_logo_%282015%29.svg', 'Electronics and appliances');
+
 
 INSERT INTO product_category (category_name, description) VALUES
 ('Clothing', 'Fashion and apparel'),
@@ -178,16 +179,17 @@ INSERT INTO product (product_name, brand_id, category_id, base_price, descriptio
 ('Smart Fridge', 10, 5, 1999.99, 'Wi-Fi enabled fridge from LG');
 
 INSERT INTO product_image (product_id, image_url, alt_text) VALUES
-(1, 'https://example.com/product_1.jpg', 'Image of product 1'),
-(2, 'https://example.com/product_2.jpg', 'Image of product 2'),
-(3, 'https://example.com/product_3.jpg', 'Image of product 3'),
-(4, 'https://example.com/product_4.jpg', 'Image of product 4'),
-(5, 'https://example.com/product_5.jpg', 'Image of product 5'),
-(6, 'https://example.com/product_6.jpg', 'Image of product 6'),
-(7, 'https://example.com/product_7.jpg', 'Image of product 7'),
-(8, 'https://example.com/product_8.jpg', 'Image of product 8'),
-(9, 'https://example.com/product_9.jpg', 'Image of product 9'),
-(10, 'https://example.com/product_10.jpg', 'Image of product 10');
+  (1, 'https://upload.wikimedia.org/wikipedia/commons/3/36/Nike_Air_Max_1.png', 'Air Max Sneakers'),  
+  (2, 'https://upload.wikimedia.org/wikipedia/commons/6/61/IPhone_14_vector.svg', 'iPhone 14'),         
+  (3, 'https://upload.wikimedia.org/wikipedia/commons/5/5a/Adidas_Ultra_Boost_4_running_shoes.jpeg', 'Ultraboost Shoes'),  
+  (4, 'https://upload.wikimedia.org/wikipedia/commons/7/7a/PlayStation_5_and_DualSense.jpg', 'PlayStation 5'),         
+  (5, 'https://upload.wikimedia.org/wikipedia/commons/c/c6/SamsungGalaxyS22.png', 'Galaxy S22'),                      
+  (6, 'https://upload.wikimedia.org/wikipedia/commons/4/49/Dell_XPS_13_9350_and_9300.jpg', 'XPS 13 Laptop'),           
+  (7, 'https://upload.wikimedia.org/wikipedia/commons/9/90/HP_ENVY_4500.png', 'Envy Printer'),                       
+  (8, 'https://us.puma.com/us/en/pd/run-velocity-mens-tri-blend-running-tee/526603', 'Running T-Shirt'),              
+  (9, 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Lenovo_ThinkPad_X1_Carbon_Ultrabook.jpg', 'ThinkPad X1'),  
+  (10, 'https://upload.wikimedia.org/wikipedia/commons/6/6c/LG_Smart_Refrigerator_at_CES_2011.jpg', 'Smart Fridge');  
+
 
 INSERT INTO product_variation (product_id, color_id, size_option_id) VALUES
 (1, 1, 1),
