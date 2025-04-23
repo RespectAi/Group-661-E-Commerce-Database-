@@ -196,10 +196,10 @@ INSERT INTO product_variation (product_id, color_id, size_option_id) VALUES
 (4, 4, 4),
 (5, 5, 5),
 (6, 6, 6),
-(7, 4, 7),
-(8, 3, 8),
-(9, 5, 9),
-(10, 3, 10);
+(7, 7, 1),
+(8, 8, 5),
+(9, 9, 3),
+(10, 10, 2);
 
 INSERT INTO product_item (variation_id, sku, price, stock_quantity) VALUES
 (1, 'SKU1000', 109.00, 94),
