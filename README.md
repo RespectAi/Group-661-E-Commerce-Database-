@@ -1,4 +1,5 @@
 ## GROUP 661 DATABASE PROJECT 
+![Alt text](Ecommerce.drawio.png)
 
 # E-Commerce Database Schema
 
