@@ -51,7 +51,7 @@ All tables utilize the InnoDB storage engine withfull Unicode compatibility. For
 - `product_item` → `product_variation`
 - `product_attribute` → (`product`, `attribute_category`, `attribute_type`)
 
-Refer to `schema.drawio` for full `CREATE TABLE` definitions with constraints.
+Refer to `Ecommerce.drawio.png` for full `CREATE TABLE` definitions with constraints.
 
 ---
 
@@ -118,10 +118,10 @@ mysql --user=root --password=yourpassword --host=localhost --port=3306 < seed_da
 
 ## Running the Scripts
 
-You can execute both schema and data in one go using `schema_and_seed.sql`:
+You can execute both schema and data in one go using `e_commerce.sql`:
 
 ```bash
-mysql -u root -p < schema_and_seed.sql
+mysql -u root -p < e_commerce.sql
 ```
 
 Ensure the following to avoid foreign key errors:
@@ -135,9 +135,9 @@ Ensure the following to avoid foreign key errors:
 ## Folder Structure
 
 ```
-├── schema.draw.io        # Table definitions
-├── e_commerce.sql        # Combined execution file
-└── README.md             # Documentation
+├── Ecommerce.drawio.png        # Table definitions
+├── e_commerce.sql              # Combined execution file
+└── README.md                   # Documentation
 ```
 
 ---
